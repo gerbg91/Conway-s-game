@@ -9,31 +9,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-        <style>
-            table {
-                background-color: activecaption;
-                border: 1px;
-                width: 600px;
-                height: 600px;
-                margin: 0 auto;
-            }
-            .viva{
-                background-color: blue;
-            }
-            .muerta{
-                background-color: activecaption;
-            }
-            body{
-                background-color: lavender;
-            }
-            #id2{
-                margin: 0 auto;
-            }
-        </style>
+        <title>Conway´s Game</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/style.css" rel="stylesheet" type="text/css"/> 
     </head>
     <body>
+        <div id="banner"><p>Conway´s Game</p></div>
         <% if (request.getParameter("tiempoGeneracion") == null) { %>
 
         <form method="POST" action="visor.jsp" >

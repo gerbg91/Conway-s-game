@@ -4,38 +4,22 @@ Conway´s Game of life
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Conway´s Game</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-            table {
-                background-color: activecaption;
-                border: none;
-            }
-            #id1{
-                background-color: #99B4D1;
-                width: 320px;
-                height: 243px;
-                margin: 0 auto;
-            }
-            body{
-                background-color: lavender;
-            }
-        </style>
+        <link href="css/style.css" rel="stylesheet" type="text/css"/> 
     </head>
     <body > 
-        <div id="id1" align="center">  
-            <h2>Juego de la vida</h2>
-
+        <div id="banner"><p>Conway´s Game</p></div>
+        <div id="contenedor_formulario">  
+            <div id="centro"><h2>Configuración</h2></div>
             <form method="POST" action="juegoVida.jsp">   
-                <table>
-                    <tr><td><b>Eje de abscisas</b>:</td><td><input type="number" name="x" value="25"/><br></td></tr>
-                    <tr><td><b>Eje de ordenadas</b>:</td><td><input type="number" name="y" value="25"/><br></td></tr>
-                    <tr><td><b>Semilla</b>:</td><td><input type="number" name="semilla" step="0.1" value="0.5"/><br></td></tr>
-                    <tr><td><b>Born</b>:</td><td><input type="number" name="born" value="3"/><br></td></tr>
-                    <tr><td><b>Stay Alive</b>:</td><td><input type="number" name="stayAlive" value="23"/><br></td></tr>
-                    <tr><td colspan="2"> <input type="submit" value="Jugar"/></td></tr>
-                </table>
+                    <div id="titol"><b>Eje de abscisas</b>:</div><div id="input1"><input type="number" name="x" value="25"/></div><br>
+                    <div id="titol"><b>Eje de ordenadas</b>:</div><div id="input1"><input type="number" name="y" value="25"/></div><br>
+                    <div id="titol"><b>Semilla</b>:</div><div id="input1"><input type="number" name="semilla" step="0.1" value="0.5"/></div><br>
+                    <div id="titol"><b>Born</b>:</div><div id="input1"><input type="number" name="born" value="3"/></div><br>
+                    <div id="titol"><b>Stay Alive</b>:</div><div id="input1"><input type="number" name="stayAlive" value="23"/></div><br>
+                    <div id="boton1"><input type="submit" value="Jugar"/></div>
             </form>
         </div>
     </body>
