@@ -1,6 +1,5 @@
 <%-- 
     Document   : visor
-    Created on : 25-oct-2014, 21:45:04
     Author     : Ger
 --%>
 
@@ -17,18 +16,20 @@
     <body>
         <div id="banner"><p>Conway´s Game</p></div>
         <% if (request.getParameter("tiempoGeneracion") == null) { %>
-
-        <form method="POST" action="visor.jsp" >
-            <b>Avanzar X generacion</b>:<input type="number" name="tiempoGeneracion" value="1"/>          
-            <input type="submit" value="Jugar"/> 
-        </form>
-          <% index.primigenea_Generacion();%>
-        <%} else { %>
-        <div id="id2">
-            <form method="POST" action="visor.jsp">
-                <b>Avanzar X generacion</b>:<input type="number" name="tiempoGeneracion" value="1" />          
+        <div id="jugada">
+            <form method="POST" action="visor.jsp" >
+                <b>Avanzar X generacion</b>:<input type="number" name="tiempoGeneracion" value="1" id="int1"/>          
                 <input type="submit" value="Jugar"/> 
             </form>
+        </div>
+        <% index.primigenea_Generacion();%>
+        <%} else { %>
+        <div id="jugada">
+            <form method="POST" action="visor.jsp">
+                <b>Avanzar X generacion</b>:<input type="number" name="tiempoGeneracion" value="1" id="int1"/>          
+                <input type="submit" value="Jugar"/> 
+            </form>
+        </div>
             <%! private int hacer_X_Generaciones;%>
             <%  hacer_X_Generaciones = Integer.parseInt(request.getParameter("tiempoGeneracion"));%>
             <jsp:setProperty name="index" property="avance" value="<%= hacer_X_Generaciones%>" />
@@ -37,7 +38,7 @@
             <%}%>
             <table border="1">
                 <%! private int fila, columna;
-                             %> 
+                                                 %> 
                 <%  for (fila = 1; fila < index.getX() - 1; fila++) {%>
                 <tr>   
                     <%  for (columna = 1; columna < index.getY() - 1; columna++) {%>

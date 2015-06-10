@@ -1,3 +1,8 @@
+/*COLOR DE FONDO*/
+body {
+    background-color: #F1F4F5;
+}
+
 /*BANNER*/
 #banner {
     background-color: black;
@@ -13,7 +18,6 @@ p {
 
 /*CONTENEDOR DEL FORMULARIO INICIAL*/
 #contenedor_formulario {
-    background-color: rgb(153, 180, 209);
     border: medium none;
     width: 310px;
     float: left;
@@ -34,36 +38,31 @@ p {
 
 #boton1 {
     margin-left: 125px;
+    margin-top: 30px;
 }
 
-
-#id1 {
-    background-color: #99B4D1;
-    width: 320px;
-    height: 243px;
-    margin: 0 auto;
-}
-
-body {
-    background-color: #F1F4F5;
-}
-
+/*TABLERO DE JUEGO*/
 table {
-    background-color: activecaption;
+    background-color: white;
     border: 1px;
-    width: 600px;
-    height: 600px;
+    width: 400px;
+    height: 400px;
     margin: 0 auto;
 }
 
 .viva {
-    background-color: blue;
+    background-color: black;
 }
 
 .muerta {
-    background-color: activecaption;
+    background-color: white;
 }
 
-#id2 {
-    margin: 0 auto;
+/*BOTON DE JUGADA*/
+#jugada {
+    margin: -30px 39% 15px;
+}
+
+#int1 {
+    width: 35px;
 }
