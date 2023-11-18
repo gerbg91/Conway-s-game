@@ -29,7 +29,7 @@ public class datos {
     /**
      * @param x the x to set
      */
-    public void setX(int x) {
+    public void setX(int x) { 
         this.x = x;
     }
 
